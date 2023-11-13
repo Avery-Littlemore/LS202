@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Float Problems</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      body, section, article, aside, footer {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        background-color: aqua;
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+      }
+
+      article {
+        background-color: burlywood;
+        box-sizing: border-box;
+        float: left;
+        padding: 1rem;
+        width: 70%;
+      }
+
+      aside {
+        background-color: darkseagreen;
+        box-sizing: border-box;
+        float: left;
+        padding: 1rem;
+       
+        float: none;
+        overflow: hidden;
+        /* width: 250px; DELETE to allow the last element to take up the leftover space in a variable width layout */
+      }
+
+      /* section::after { 
+        clear: both;
+        content: "";
+        display: block;
+      } */
+
+      footer {
+        background-color: snow;
+        clear: both;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue malesuada ligula, a rutrum lorem sagittis vel. Vivamus cursus ipsum eu nulla euismod porttitor aliquet rutrum erat. In laoreet mi vitae dolor efficitur, vel imperdiet est placerat. Donec eu ullamcorper nunc. Etiam dictum ligula ut est congue, blandit commodo metus congue. Vestibulum tempor lectus sed sodales aliquam. Nunc molestie sit amet lectus non sodales.</p>
+        <p>Mauris facilisis non arcu sit amet molestie. Donec molestie ligula id nisi commodo, vel congue nisl venenatis. Etiam luctus lorem sed nunc tempus, congue tincidunt mi vestibulum. Duis bibendum pulvinar turpis nec aliquam. Mauris feugiat sagittis ligula, id accumsan est consequat ac. Curabitur et ex eu augue tincidunt consequat. Integer posuere augue vitae leo pellentesque pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi condimentum tortor sit amet tincidunt aliquet.</p>
+      </article>
+      <aside>
+        <p>Donec tincidunt, nisi a fermentum ultrices, tellus augue dictum quam, non faucibus est massa aliquet neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sagittis feugiat turpis. Nunc lobortis egestas arcu at pretium. Nunc et sagittis nulla. Phasellus commodo vestibulum accumsan. Etiam tempor sapien sapien. Pellentesque varius libero non magna rhoncus, non ultricies justo fermentum. Aliquam tempus elit sit amet mauris vestibulum hendrerit. Aliquam erat volutpat. Ut a odio libero. Quisque sit amet ligula hendrerit, porta orci eget, vulputate tellus. Cras sed purus at nisl pharetra consequat. In mollis dictum felis. Vivamus ac feugiat nunc.</p>
+        <p>Donec sit amet gravida erat. Ut arcu orci, viverra hendrerit sodales ut, rutrum eget leo. Cras sagittis blandit eros, feugiat ultrices nisi fringilla ac. Nullam commodo ultricies arcu, sed semper odio blandit sit amet. Quisque non massa nec metus ullamcorper imperdiet. Nam nec rhoncus eros, in ultrices odio. Phasellus commodo facilisis mi, eu rutrum augue suscipit at. Maecenas eu tincidunt mauris, vitae dignissim neque. Aliquam erat volutpat. Sed vitae ipsum nisl. Nullam faucibus interdum enim ac rutrum. Nulla dolor nunc, condimentum non lacus eu, sollicitudin condimentum sapien. Vestibulum a felis quis risus commodo rhoncus ut quis augue.</p>
+      </aside>
+      <footer>
+        <p>Vivamus tempus eros nec ante porta, aliquam pellentesque dolor consequat. Donec mattis massa ante. Maecenas et tincidunt lacus, a consequat lectus. Praesent porta et arcu id gravida. Nam est lacus, mattis sit amet elit eu, dictum rutrum est. In pellentesque facilisis magna, id placerat dui ultricies in. Sed quam ex, malesuada eu sapien vitae, tristique lacinia neque. Donec rutrum tincidunt vestibulum. Etiam a lorem egestas, semper est non, pulvinar orci. Donec aliquet lorem mi, ut gravida ipsum placerat non. Vestibulum sollicitudin arcu nec bibendum tristique. Morbi iaculis ex sed pellentesque fringilla. Ut maximus velit at dolor varius, sed faucibus mauris venenatis. Curabitur dictum risus in dolor faucibus commodo nec eu sem. Sed euismod eleifend ligula sit amet blandit. Mauris ornare, lectus vel tristique bibendum, velit lectus faucibus leo, quis pellentesque risus elit in massa.</p>
+      </footer>
+    </section>
+  </body>
+</html>

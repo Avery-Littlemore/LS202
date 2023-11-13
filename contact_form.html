@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font: normal 16px Arial, Helvetica, sans-serif;
+      }
+
+      fieldset {
+        border: 0;
+        margin: 0 auto;
+        padding: 0; 
+        width: 600px;
+      }
+
+      dt {
+        margin-bottom: 5px;
+      }
+
+      dd {
+        margin: 0 0 25px 0;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"], 
+      textarea {
+        box-sizing: border-box;
+        font: normal 16px Arial, Helvetica, sans-serif;
+        height: 30px;
+        padding: 3px 10px;
+        width: 100%;
+      }
+
+      textarea {
+        height: auto;
+        resize: vertical;
+      }
+
+      .red {
+        color: red;
+        margin: 0 0 5px 0;
+      }
+
+      .green {
+        color: green;
+        margin: 0 0 5px 0;
+      }
+
+      .blue {
+        color: blue;
+        margin: 0 0 5px 0;
+      }
+
+      .tech {
+        margin-bottom: 5px;
+      }
+
+      .comments {
+        margin-top: 25px;
+      }
+
+      .partial {
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .one_half {
+        width: 50%;
+      }
+
+      .left {
+        padding-right: 5px;
+      }
+
+      .right {
+        padding-left: 5px;
+      }      
+
+      .one_tenth {
+        width: 10%;
+      }
+
+      .four_tenths {
+        width: 40%;
+      }
+
+      .both {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      dl {
+        margin-bottom: 0;
+      }
+
+      dl + dl {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl class="partial one_half left">
+          <dt><label for="first-name">First Name</label></dt>
+          <dd><input type="text" name="first-name" id="first-name" required></dd>
+        </dl><!-- 
+         --><dl class="partial one_half right">
+          <dt><label for="last-name">Last Name</label></dt>
+          <dd><input type="text" name="last-name" id="last-name" required></dd>
+        </dl>
+        <dl class="partial one_half both">
+          <dt><label for="city">City</label></dt>
+          <dd><input type="text" name="city" id="city" required></dd>
+        </dl><!-- 
+        --><dl class="partial one_tenth right">
+          <dt><label for="state">State</label></dt>
+          <dd>
+            <select id="state">
+              <option>AK</option>
+              <option>AL</option>
+              <option>AR</option>
+              <option>AZ</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DC</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>IA</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>MA</option>
+              <option>MD</option>
+              <option>ME</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MO</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>NE</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NV</option>
+              <option>NY</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VA</option>
+              <option>VT</option>
+              <option>WA</option>
+              <option>WI</option>
+              <option>WV</option>
+              <option>WY</option>
+            </select>
+          </dd>
+        </dl><!-- 
+        --><dl class="partial four_tenths left">
+          <dt><label for="email">Email Address</label></dt>
+          <dd><input type="email" name="email" id="email" required autocomplete="off" autocapitalize="off" placeholder="name@domain"></dd>
+        </dl>
+        <dl>
+          <dt><label for="zip">Zip Code</label></dt>
+          <dd><input type="text" name="zip" id="zip" pattern="[0-9]{5}" placeholder="12345"></dd>
+        </dl>
+        <dl>
+          <dt>Which of these colors do you like best?</dt>
+          <dd class="red">
+            <label>
+              <input type="radio" name="colour" value="red" checked>&#9608;&#9608;&#9608;
+            </label>
+          </dd>
+          <dd class="green">
+            <label>
+              <input type="radio" name="colour" value="green">&#9608;&#9608;&#9608;
+            </label>
+          </dd>
+          <dd class="blue">
+            <label>
+              <input type="radio" name="colour" value="blue">&#9608;&#9608;&#9608;
+            </label>
+          </dd>
+          
+          <dt>Which web technologies do you want to learn?</dt>
+          <dd class="tech">
+            <label>
+              <input type="checkbox" name="html" value="html">HTML
+            </label>
+          </dd>
+          <dd class="tech">
+            <label>
+              <input type="checkbox" name="css" value="css">CSS
+            </label>
+          </dd>
+          <dd class="tech">
+            <label>
+              <input type="checkbox" name="javascript" value="javascript">JavaScript
+            </label>
+          </dd>
+
+          <dt class="comments"><label for="comments">Comments</label></dt>
+          <dd><textarea name="comments" id="comments" rows="6" cols="80" placeholder="Type your comments here..."></textarea></dd>
+        </dl>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="-08:00">
+        <input type="submit" value="Send">
+        <input type="reset">
+      </fieldset>
+    </form>
+  </body>
+</html>

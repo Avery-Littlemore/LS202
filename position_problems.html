@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Position Problems</title>
+    <meta charset="utf-8">
+    <style>
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        border: 8px solid #cecece;
+      }
+
+      #positioned {
+        background-color: #ffc;
+        box-sizing: border-box;
+        padding: 30px 15px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: 20px;
+        width: 400px;
+      }
+
+      #positioned {
+        top: 20px;
+        /* z-index must be greater than that of the elements you want overlay */
+        z-index: 2; /* 2 must be > 1 */
+      }
+
+      #fixed {
+        background-color: rgba(0, 0, 0, .6);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1; /* 1 must be < 2 */
+      }
+
+      #positioned span {
+        background-color: pink;
+        height: 20px;
+        left: -10px;
+        position: absolute;
+        top: -10px;
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum metus ut arcu rhoncus pharetra. Integer ut dapibus nulla. Nullam eget lacus nec quam sollicitudin pretium. Sed finibus sit amet mi id convallis. Curabitur eleifend quam vel mauris vulputate tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eget erat sed quam molestie porta. Curabitur at ipsum enim.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+      <p>Nullam non arcu fringilla, semper felis in, aliquet elit. Nulla tristique nisl ac ipsum imperdiet, vel tempor magna aliquam. Aliquam sed sagittis purus, vel imperdiet eros. Quisque bibendum scelerisque purus, sit amet hendrerit est condimentum eu. Nam nisi massa, semper ac est eu, dictum posuere nunc. Duis tortor orci, dignissim quis venenatis id, malesuada sed mauris. Maecenas at mauris et sapien consequat varius eu eu est. Aenean posuere ornare congue.</p>
+    </section>
+    <div id="fixed"></div>
+    <div id="positioned">
+      <span></span>
+      I'm positioned!
+    </div>
+  </body>
+</html>
